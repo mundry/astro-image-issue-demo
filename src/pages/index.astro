@@ -1,0 +1,17 @@
+---
+import { Picture } from '@astrojs/image/components';
+
+import HeroImage from '../../public/img/hero.png';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Astro Image</title>
+  </head>
+  <body>
+    <Picture src={HeroImage} widths={[150]} sizes="150px" />
+    <Picture src={'./public/img/hero.png'} widths={[150]} sizes="150px" aspectRatio={'1:1'} />
+  </body>
+</html>
